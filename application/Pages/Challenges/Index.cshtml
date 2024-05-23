@@ -1,0 +1,40 @@
+﻿@page
+@model application.Pages.Challenges.IndexModel
+@{
+    ViewData["Title"] = "Challenges";
+}
+
+<h1>Challenges</h1>
+
+<form method="get">
+    <div class="form-group">
+        <input type="text" name="SearchString" value="@Model.SearchString" class="form-control" placeholder="Search challenges..." />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Difficulty Level</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Challenges)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@item.Category</td>
+            <td>@item.DifficultyLevel</td>
+            <td>@item.StartDate.ToShortDateString()</td>
+            <td>@item.EndDate.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>

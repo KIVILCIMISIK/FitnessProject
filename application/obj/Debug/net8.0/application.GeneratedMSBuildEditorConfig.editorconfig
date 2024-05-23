@@ -66,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/Kıvılcım/FitnessProject/application/Pages/Challenges/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbGxlbmdlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Kıvılcım/FitnessProject/application/Pages/Challenges/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbGxlbmdlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Kıvılcım/FitnessProject/application/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

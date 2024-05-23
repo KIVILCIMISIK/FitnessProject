@@ -1,0 +1,51 @@
+﻿@page
+@model application.Pages.Challenges.CreateModel
+@{
+    ViewData["Title"] = "Create Challenge";
+}
+
+<h1>Create Challenge</h1>
+
+<h4>Challenge</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Challenge.Title" class="control-label"></label>
+                <input asp-for="Challenge.Title" class="form-control" />
+                <span asp-validation-for="Challenge.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Challenge.Description" class="control-label"></label>
+                <input asp-for="Challenge.Description" class="form-control" />
+                <span asp-validation-for="Challenge.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Challenge.Category" class="control-label"></label>
+                <input asp-for="Challenge.Category" class="form-control" />
+                <span asp-validation-for="Challenge.Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Challenge.DifficultyLevel" class="control-label"></label>
+                <input asp-for="Challenge.DifficultyLevel" class="form-control" />
+                <span asp-validation-for="Challenge.DifficultyLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Challenge.StartDate" class="control-label"></label>
+                <input asp-for="Challenge.StartDate" class="form-control" type="date" />
+                <span asp-validation-for="Challenge.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Challenge.EndDate" class="control-label"></label>
+                <input asp-for="Challenge.EndDate" class="form-control" type="date" />
+                <span asp-validation-for="Challenge.EndDate" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
